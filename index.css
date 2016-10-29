@@ -1,5 +1,6 @@
 body{
-	overflow: hidden;
+	/*overflow: hidden;*/
+	overflow: visible;
 }
 
 @font-face{
@@ -7,41 +8,10 @@ body{
 	src: url('asset/SNR.ttf');
 }
 
-.inputField{
-	vertical-align: center;
+.removeNavbarMargin {
+	margin-bottom: 0px;
 }
 
-.standardLabel {
-	font-family: Arial;
-	font-weight: bold;
-}
-
-.confirmButton {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
-	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
-	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
-	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
-	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
-	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
-	background-color:#77b55a;
-	border:1px solid #4b8f29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	font-weight:bold;
-	padding:6px 12px;
-	text-decoration:none;
-}
-.confirmButton:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
-	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
-	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
-	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
-	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
-	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#72b352', endColorstr='#77b55a',GradientType=0);
-	background-color:#72b352;
+.addTopMargin {
+	margin-top: 300px;
 }

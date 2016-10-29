@@ -1,24 +1,101 @@
 <!DOCTYPE html>
-
 <html>
-
   <head>
-
-  <title>JQuery</title>
-
-  <link rel="shortcut icon" href="./icon.ico" />
-  <link rel="stylesheet" href="index.css">
-
-
-  <script src="./jquery-3.1.1.js"></script>
-  <script src="./index.js"></script>
-
+    <title>Bootstrap</title>
+    <script src="./jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <!-- <link rel="shortcut icon" href="./icon.ico"/> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css"> <!-- MAKE SURE AFTER BOOTSTRAP -->
   </head>
 
-  <body>
-    <label class="standardLabel">Name: </label>
-    <input type="text" id="nameInp" placeholder="Name" class="inputField" autofocus></input>
-    
-    <button id="confBtn" class="confirmButton">Confirm</button>
-  </body>
-</html>
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="removeNavbarMargin navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Odysseus Adaptation</a>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#header1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="chap1">Chapter 1<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#chap11">Beginning</a></li>
+                <li><a href="#chap12">Middle</a></li>
+                <li><a href="#chap13">End</a></li>
+              </ul>
+            </li>
+            
+            <li class="dropdown">
+              <a href="#header2" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="chap2">Chapter 2<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#chap21">Beginning</a></li>
+                <li><a href="#chap22">Middle</a></li>
+                <li><a href="#chap23">End</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#header3" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="chap3">Chapter 3<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#chap31">Beginning</a></li>
+                <li><a href="#chap32">Middle</a></li>
+                <li><a href="#chap33">End</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron" id="jumbtrn">
+        <div class="container">
+          <h1>Xander's Odyssey</h1>
+          <p>Xander Xylona's Adaptation of the Odyssey</p>
+          <a href="" role="button" class="btn btn-default">GitHub Repo</a>
+        </div>
+      </div>
+      <div class="container" id="chap11">
+        <div class="row" id="header1">
+          <div class="col-md-12">
+            <h2>Heading</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+
+        <div class="row addTopMargin" id="chap12">
+          <div class="col-md-12">
+            <h2>Header</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+
+        <div class="row addTopMargin" id="header3">
+          <div class="col-md-12">
+            <h2>Heading</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+
+        <div class="row addTopMargin">
+          <div class="col-md-12">
+            <h2>Heading</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+        <div class="row addTopMargin">
+          <div class="col-md-12">
+            <h2>Heading</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
